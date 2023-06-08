@@ -80,14 +80,14 @@ body {
 	font-size: 30px;
 }
 .about-me__introduction {
-	font-family: 'Spectral';
+	font-family: 'arial';
 	font-weight: 800;
-	font-style: italic;
-	width: 60%;
+	font-style: none;
+	width: 80%;
 }
 #about-me p {
-	width: 80%;
-	font-size: 14px;
+	width: 60%;
+	font-size: 18px;
 }
 
 .title{
@@ -98,8 +98,8 @@ body {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
-	background-color: #9d9446;
+	color: black;
+	background-color: #D8D3A8;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
