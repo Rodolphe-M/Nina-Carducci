@@ -160,7 +160,6 @@ body {
 	position: relative;
 }
 #services .container::before{
-	content: ' ';
 	background-color: #1C6474;
 	position: absolute;
 	width: 100%;
