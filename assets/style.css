@@ -209,6 +209,7 @@ body {
 	right: 0;
 	z-index: -1;
 }
+
 .form-container {
 	flex : 2;
 
@@ -349,6 +350,11 @@ input[type="submit"] {
 	}
 	.picture {
 		width: 80%;
+	}
+
+	picture {
+		width: 100vm;
+		height: auto;
 	}
 }
 
