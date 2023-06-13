@@ -64,7 +64,15 @@
     $(".gallery").on("click", ".mg-next", () =>
       $.fn.mauGallery.methods.nextImage(options.lightboxId)
     );
+    
+    // Ajout de l'écouteur pour la touche "Entrée"
+    $(document).on("keydown", ".nav-link", function(event) {
+      if (event.which === 13) { // Touche "Entrée" pressée
+        $.fn.mauGallery.methods.filterByTag.call(this);
+      }
+    });
   };
+ 
   $.fn.mauGallery.methods = {
     createRowWrapper(element) {
       if (
@@ -220,10 +228,10 @@
     },
     showItemTags(gallery, position, tags) {
       var tagItems =
-        '<li class="nav-item"><a class="nav-link active active-tag"  data-images-toggle="all">Tous</a></li>';
+        '<li class="nav-item"><a class="nav-link active active-tag"  data-images-toggle="all" role="button" tabindex="0">Tous</a></li>';
       $.each(tags, function(index, value) {
         tagItems += `<li class="nav-item active">
-                <a class="nav-link"  data-images-toggle="${value}">${value}</a></li>`;
+                <a class="nav-link"  data-images-toggle="${value}" role="button" tabindex="0">${value}</a></li>`;
       });
       var tagsRow = `<ul class="my-4 tags-bar nav nav-pills">${tagItems}</ul>`;
 
