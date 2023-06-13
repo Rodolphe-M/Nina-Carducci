@@ -6,6 +6,25 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+  }
+  
+  @font-face {
+	font-family: 'Spectral';
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap');
+  }
+  
+  /* Vos règles CSS utilisant les polices Inter et Spectral */
+  
 .top-header {
 	background-color: white;
 	position: sticky;
